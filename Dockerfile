@@ -4,6 +4,7 @@ MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
 RUN yum -y install wget java
 RUN mkdir /opt/cerebro
+RUN cd /opt/cerebro
 RUN wget https://github.com/lmenezes/cerebro/releases/download/v0.6.5/cerebro-0.6.5.tgz
 RUN tar xzvf cerebro-0.6.5.tgz
 RUN mv cerebro-0.6.5/* .
